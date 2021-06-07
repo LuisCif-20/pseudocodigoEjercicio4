@@ -1,0 +1,22 @@
+Proceso
+	var edad
+	var menor
+	var mayor
+	Escribir "Ingrese la primer edad"
+	Leer edad
+	menor <- edad
+	mayor <- edad
+	Para i = 0, hasta i < 19, i = i+1
+		Escribir "Ingrese la siguiente la edad"
+		Leer edad
+		Si edad >= mayor
+			mayor <- edad
+		Sino
+			Si edad < menor
+				menor <- edad
+			Finsi
+		FinSi
+	FinPara
+	Escribir "La edad mayor es " + mayor
+	Escribir "La edad menor es " + menor
+FinProceso
